@@ -1,0 +1,138 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, sans-serif;
+    margin: 0;
+    background: #F9FAFB;
+    color: #111827;
+    line-height: 1.6;
+}
+
+/* Container principal da LP */
+.main-container {
+    background: #FFFFFF;
+    max-width: 1100px;
+    margin: 60px auto;
+    border-radius: 16px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.06);
+    overflow: hidden;
+}
+
+/* Seções */
+.section {
+    padding: 90px 60px;
+}
+
+.section-alt {
+    background: #F3F4F6;
+    padding: 90px 60px;
+}
+
+/* Avisos Comunidade */
+.community-top {
+    text-align: center;
+    font-size: 13px;
+    color: #6B7280;
+    padding: 14px 20px;
+    background: #E5E7EB;
+    letter-spacing: 0.5px;
+}
+
+.community-bottom {
+    text-align: center;
+    font-size: 13px;
+    color: #6B7280;
+    padding: 40px 20px;
+    border-top: 1px solid #E5E7EB;
+}
+
+/* Tipografia */
+h1 {
+    font-size: 44px;
+    font-weight: 600;
+    line-height: 1.2;
+    max-width: 800px;
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    margin-top: 60px;
+}
+
+p {
+    color: #374151;
+    font-size: 18px;
+    max-width: 800px;
+}
+
+ul {
+    color: #374151;
+    font-size: 17px;
+}
+
+/* Botão */
+.btn-primary {
+    display: inline-block;
+    background: #1E3A8A;
+    color: #fff;
+    padding: 16px 28px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 500;
+    margin-top: 30px;
+    transition: all 0.2s ease;
+}
+
+.btn-primary:hover {
+    background: #162E6D;
+    transform: translateY(-2px);
+}
+
+/* Imagens */
+.image-frame {
+    border: 1px solid #E5E7EB;
+    border-radius: 14px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.05);
+    margin-top: 40px;
+    width: 100%;
+}
+
+/* Layout */
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.grid-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.card-step {
+    border: 1px solid #E5E7EB;
+    padding: 35px;
+    border-radius: 14px;
+    background: #FFFFFF;
+}
+
+.number {
+    font-size: 26px;
+    font-weight: bold;
+    color: #1E3A8A;
+    margin-bottom: 10px;
+}
+
+@media(max-width: 900px) {
+    .grid-2, .grid-4 {
+        grid-template-columns: 1fr;
+    }
+
+    .section, .section-alt {
+        padding: 70px 30px;
+    }
+}
