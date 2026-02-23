@@ -4,122 +4,19 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Rapport AI</title>
-
-<style>
-body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, sans-serif;
-    margin: 0;
-    background: #ffffff;
-    color: #111827;
-    line-height: 1.6;
-}
-
-section {
-    padding: 80px 20px;
-    max-width: 1100px;
-    margin: 0 auto;
-}
-
-h1 {
-    font-size: 42px;
-    font-weight: 600;
-    line-height: 1.2;
-}
-
-h2 {
-    font-size: 30px;
-    margin-bottom: 20px;
-}
-
-h3 {
-    margin-top: 50px;
-}
-
-p {
-    color: #374151;
-    font-size: 18px;
-}
-
-ul {
-    color: #374151;
-    font-size: 17px;
-}
-
-.divider {
-    height: 1px;
-    background: #E5E7EB;
-    margin: 60px 0;
-}
-
-.btn-primary {
-    display: inline-block;
-    background: #1E3A8A;
-    color: #fff;
-    padding: 16px 28px;
-    border-radius: 10px;
-    text-decoration: none;
-    font-weight: 500;
-    margin-top: 20px;
-}
-
-.subtext {
-    font-size: 14px;
-    color: #6B7280;
-    margin-top: 8px;
-}
-
-.image-frame {
-    border: 1px solid #E5E7EB;
-    border-radius: 12px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
-    margin-top: 30px;
-    width: 100%;
-}
-
-.grid-2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
-    align-items: center;
-}
-
-.grid-4 {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-}
-
-.card-step {
-    border: 1px solid #E5E7EB;
-    padding: 30px;
-    border-radius: 12px;
-    text-align: left;
-}
-
-.number {
-    font-size: 28px;
-    font-weight: bold;
-    color: #1E3A8A;
-    margin-bottom: 10px;
-}
-
-@media(max-width: 900px) {
-    .grid-2, .grid-4 {
-        grid-template-columns: 1fr;
-    }
-}
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- BLOCO COMUNIDADE SUPERIOR -->
-<div style="text-align:center;font-size:13px;color:#6B7280;padding:12px 20px;border-bottom:1px solid #E5E7EB;">
-Versão de validação estratégica |—| Comunidade SaaS
+<div class="community-top">
+Versão de validação estratégica — Comunidade SaaS
 </div>
 
+<div class="main-container">
+
 <!-- HERO -->
-<section>
+<div class="section">
 <h1>O momento que decide a visita é onde a conversão começa.</h1>
 
 <p>
@@ -143,22 +40,24 @@ Mais clareza para o lead.
 Quero testar na minha operação
 </a>
 
-<div class="subtext">Teste estruturado mediante alinhamento estratégico.</div>
-</section>
-
-<div class="divider"></div>
+<p class="subtext">Teste estruturado mediante alinhamento estratégico.</p>
+</div>
 
 <!-- MOMENTO CRÍTICO -->
-<section class="grid-2">
+<div class="section-alt grid-2">
+
 <div>
 <h2>O momento mais sensível da jornada</h2>
+
 <p>
 O lead já escolheu sua imobiliária. Ele solicitou informações específicas sobre um ou mais imóveis dentro da sua operação.
 Isso já é uma vantagem competitiva conquistada.
 </p>
+
 <p>
 Agora ele decide se aquele imóvel — e aquele corretor — merecem o tempo dele para uma visita.
 </p>
+
 <p>
 Não é mais busca por outras imobiliárias. É busca por segurança para decidir.
 </p>
@@ -167,12 +66,11 @@ Não é mais busca por outras imobiliárias. É busca por segurança para decidi
 <div>
 <img src="assets/momento-critico.png" class="image-frame">
 </div>
-</section>
 
-<div class="divider"></div>
+</div>
 
 <!-- COMO FUNCIONA -->
-<section>
+<div class="section">
 <h2>Como o Rapport AI atua na prática</h2>
 
 <h3>1. Contexto Estratégico</h3>
@@ -190,13 +88,10 @@ Não é mais busca por outras imobiliárias. É busca por segurança para decidi
 <h3>4. Geração do Dossiê</h3>
 <p>Dossiê personalizado em WhatsApp, E-mail ou Documento.</p>
 <img src="assets/step4.png" class="image-frame">
-
-</section>
-
-<div class="divider"></div>
+</div>
 
 <!-- GOVERNANÇA -->
-<section>
+<div class="section-alt">
 <h2>Governança e Padronização Estratégica</h2>
 
 <p>
@@ -218,12 +113,10 @@ o corretor é sinalizado antes do envio, reduzindo risco e protegendo a marca.
 <li>Alinhamento estratégico invisível para o cliente</li>
 </ul>
 
-</section>
+</div>
 
-<div class="divider"></div>
-
-<!-- PROCESSO DE TESTE -->
-<section>
+<!-- PROCESSO -->
+<div class="section">
 <h2>Como funciona o piloto estruturado</h2>
 
 <div class="grid-4">
@@ -249,12 +142,10 @@ o corretor é sinalizado antes do envio, reduzindo risco e protegendo a marca.
 </div>
 
 </div>
-</section>
-
-<div class="divider"></div>
+</div>
 
 <!-- CTA FINAL -->
-<section style="text-align:center">
+<div class="section-alt" style="text-align:center">
 
 <h2>Estruture o momento que define a visita.</h2>
 
@@ -266,10 +157,11 @@ Quero testar na minha operação
 Ao preencher o formulário você poderá registrar interesse no piloto estruturado.
 </p>
 
-</section>
+</div>
 
-<!-- BLOCO COMUNIDADE FINAL -->
-<div style="text-align:center;font-size:13px;color:#6B7280;padding:40px 20px;border-top:1px solid #E5E7EB;margin-top:60px;">
+</div>
+
+<div class="community-bottom">
 Esta página está sendo apresentada à Comunidade SaaS para validação estratégica.
 </div>
 
