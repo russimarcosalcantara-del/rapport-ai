@@ -13,137 +13,139 @@ body{
     color:#111827;
 }
 
-/* BLOCO COMUNIDADE */
-.community-block{
+/* ===== BLOCO COMUNIDADE ===== */
+.community{
     background:#0F172A;
-    color:#E5E7EB;
+    color:#E2E8F0;
     text-align:center;
-    padding:40px 20px;
+    padding:50px 20px;
 }
 
-.community-block h3{
-    margin:0 0 15px 0;
+.community h3{
     font-size:22px;
-    font-weight:600;
+    margin-bottom:15px;
 }
 
-.community-block p{
+.community p{
     max-width:800px;
     margin:0 auto;
-    color:#CBD5E1;
     font-size:15px;
     line-height:1.6;
+    color:#CBD5E1;
 }
 
-/* CONTAINER PRINCIPAL (LP) */
+/* ===== WRAPPER LP ===== */
 .lp-wrapper{
-    background:#ffffff;
     max-width:1100px;
     margin:60px auto;
-    border-radius:16px;
-    box-shadow:0 40px 80px rgba(0,0,0,0.25);
+    background:#ffffff;
+    border-radius:18px;
+    box-shadow:0 50px 100px rgba(0,0,0,0.35);
     overflow:hidden;
 }
 
-/* SECTIONS */
+/* ===== SECTIONS ===== */
 section{
-    padding:80px 60px;
+    padding:90px 60px;
 }
 
-.alt-bg{
+.alt{
     background:#F8FAFC;
 }
 
-.light-blue{
+.light{
     background:#EFF6FF;
 }
 
+/* ===== TIPOGRAFIA ===== */
 h1{
-    font-size:42px;
+    font-size:44px;
     line-height:1.2;
     margin-bottom:20px;
 }
 
 h2{
-    font-size:30px;
+    font-size:32px;
     margin-bottom:20px;
 }
 
 h3{
-    margin-top:40px;
+    margin-top:0;
 }
 
 p{
     font-size:18px;
-    color:#374151;
     line-height:1.7;
+    color:#374151;
 }
 
 ul{
     font-size:17px;
     color:#374151;
+    line-height:1.6;
 }
 
-/* HERO */
+/* ===== HERO ===== */
 .hero{
     background:#1E3A8A;
     color:#fff;
 }
 
 .hero p{
-    color:#E5E7EB;
+    color:#E2E8F0;
 }
 
-.btn-primary{
+.btn{
     display:inline-block;
     background:#ffffff;
     color:#1E3A8A;
-    padding:16px 28px;
-    border-radius:10px;
+    padding:16px 30px;
+    border-radius:12px;
     text-decoration:none;
     font-weight:600;
-    margin-top:20px;
+    margin-top:25px;
 }
 
-.btn-primary:hover{
+.btn:hover{
     opacity:0.9;
 }
 
-/* GRID */
+/* ===== GRID ===== */
 .grid-2{
     display:grid;
     grid-template-columns:1fr 1fr;
-    gap:50px;
+    gap:60px;
     align-items:center;
 }
 
 .grid-3{
     display:grid;
     grid-template-columns:repeat(3,1fr);
-    gap:30px;
+    gap:40px;
 }
 
-/* CARD */
+/* ===== CARDS ===== */
 .card{
     background:#ffffff;
-    border-radius:14px;
-    padding:30px;
-    box-shadow:0 20px 40px rgba(0,0,0,0.08);
+    padding:35px;
+    border-radius:16px;
+    box-shadow:0 25px 50px rgba(0,0,0,0.08);
 }
 
-.step-icon{
-    font-size:26px;
-    margin-bottom:10px;
+.icon{
+    font-size:28px;
+    margin-bottom:15px;
 }
 
-.image-frame{
+/* ===== IMAGENS ===== */
+.image{
     width:100%;
-    border-radius:12px;
-    box-shadow:0 20px 40px rgba(0,0,0,0.15);
-    margin-top:20px;
+    border-radius:14px;
+    box-shadow:0 25px 50px rgba(0,0,0,0.18);
+    margin-top:30px;
 }
 
-/* CTA FINAL */
+/* ===== CTA ===== */
 .cta{
     background:#1E3A8A;
     color:#fff;
@@ -151,18 +153,18 @@ ul{
 }
 
 .cta p{
-    color:#E5E7EB;
+    color:#E2E8F0;
 }
 
-.cta .btn-primary{
-    background:#fff;
+.cta .btn{
+    background:#ffffff;
     color:#1E3A8A;
 }
 
-/* RESPONSIVO */
+/* ===== RESPONSIVO ===== */
 @media(max-width:900px){
     section{
-        padding:60px 30px;
+        padding:70px 30px;
     }
     .grid-2,.grid-3{
         grid-template-columns:1fr;
@@ -173,19 +175,20 @@ ul{
 
 <body>
 
-<!-- BLOCO COMUNIDADE INICIAL -->
-<div class="community-block">
+<!-- ===== BLOCO COMUNIDADE SUPERIOR ===== -->
+<div class="community">
 <h3>🧠 Validação Estratégica — Comunidade SaaS</h3>
 <p>
-Esta é a V0 (hipótese de fakedoor) construída para nosso ICP ideal: 
-imobiliárias médias e grandes que desejam escalar vendas com governança comercial.
+Esta é a versão V0 da fakedoor construída para nosso ICP ideal:
+imobiliárias médias e grandes que desejam estruturar governança comercial
+no momento mais crítico da conversão.
 <br><br>
 Abaixo começa a experiência pensada para esse ICP.
-Sua opinião impacta diretamente nossa decisão de avançar.
+Seu feedback impacta diretamente a decisão de avançarmos.
 </p>
 </div>
 
-<!-- WRAPPER LP -->
+<!-- ===== WRAPPER LP ===== -->
 <div class="lp-wrapper">
 
 <!-- HERO -->
@@ -201,66 +204,68 @@ merecem o tempo dele.
 
 <p><strong>Inteligência aplicada ao momento crítico da decisão.</strong></p>
 
-<a href="https://forms.gle/hNkyhk3SKBpFB1aa8" class="btn-primary">
+<a href="https://forms.gle/hNkyhk3SKBpFB1aa8" class="btn">
 Quero testar na minha operação
 </a>
 </section>
 
-<!-- MOMENTO + REALIDADE -->
-<section class="alt-bg">
+<!-- MOMENTO CRÍTICO -->
+<section>
 <h2>O momento mais sensível da jornada</h2>
 
-<div class="grid-2">
-<div>
 <p>
-O lead já iniciou a UX com sua imobiliária.
+O lead já iniciou a experiência com sua imobiliária.
 Isso é uma vantagem conquistada.
 </p>
 
 <p>
 Mas muitas vezes a resposta enviada é apenas um link,
-sem argumento, sem estrutura e sem diferenciação.
+sem estrutura estratégica e sem diferenciação.
 </p>
 
+<div class="grid-2">
+<div>
 <ul>
-<li>Sem ancoragem estratégica</li>
 <li>Sem organização clara</li>
-<li>Sem contexto personalizado</li>
+<li>Sem racional de escolha</li>
+<li>Sem argumento comercial</li>
+<li>Sem padronização entre corretores</li>
 </ul>
 </div>
 
 <div>
-<img src="assets/resposta-hoje.png" class="image-frame">
+<img src="assets/resp-atual.png" class="image">
 </div>
 </div>
 </section>
 
 <!-- COMO FUNCIONA -->
-<section>
+<section class="alt">
 <h2>Como o Rapport AI estrutura esse momento</h2>
 
 <div class="grid-3">
 
 <div class="card">
-<div class="step-icon">🧩</div>
-<h3>1. Contexto Estratégico</h3>
+<div class="icon">🧩</div>
+<h3>Contexto Estratégico</h3>
 <p>
-Critérios técnicos e contexto do lead são organizados antes da resposta.
+O corretor informa critérios técnicos, perfil do lead
+e objetivo da busca.
 </p>
 </div>
 
 <div class="card">
-<div class="step-icon">🧠</div>
-<h3>2. Estruturação Inteligente</h3>
+<div class="icon">🧠</div>
+<h3>Estruturação Inteligente</h3>
 <p>
-Imóveis são organizados por aderência real,
-com racional claro e argumento comercial.
+A IA organiza imóveis por aderência real,
+com racional estratégico claro.
 </p>
 </div>
 
 <div class="card">
-<div class="step-icon">🛡️</div>
-<h3>3. Governança Invisível</h3>
+<div class="icon">🛡️</div>
+<h3>Governança Integrada</h3>
 <p>
 Verificação contextual entre campos estruturados
 e descrição do imóvel.
@@ -269,30 +274,28 @@ Inconsistências são sinalizadas antes do envio.
 </div>
 
 </div>
-
-<img src="assets/dossie.png" class="image-frame">
 </section>
 
 <!-- PILOTO -->
-<section class="light-blue">
+<section class="light">
 <h2>Piloto estruturado em 3 passos</h2>
 
 <div class="grid-3">
 
 <div class="card">
-<div class="step-icon">📅</div>
+<div class="icon">📅</div>
 <h3>Diagnóstico (45 min)</h3>
-<p>Alinhamento estratégico sobre sua operação.</p>
+<p>Alinhamento estratégico da operação.</p>
 </div>
 
 <div class="card">
-<div class="step-icon">⚙️</div>
+<div class="icon">⚙️</div>
 <h3>Configuração (2–3 dias)</h3>
 <p>Preparação do inventário piloto.</p>
 </div>
 
 <div class="card">
-<div class="step-icon">🚀</div>
+<div class="icon">🚀</div>
 <h3>Liberação</h3>
 <p>Uso estruturado por 15 dias.</p>
 </div>
@@ -300,8 +303,8 @@ Inconsistências são sinalizadas antes do envio.
 </div>
 
 <p style="margin-top:30px;">
-Sem integração complexa.  
 Sem troca de CRM.  
+Sem integração complexa.  
 Sem risco operacional.
 </p>
 </section>
@@ -314,25 +317,21 @@ Sem risco operacional.
 Valide em sua operação com um piloto controlado.
 </p>
 
-<a href="https://forms.gle/hNkyhk3SKBpFB1aa8" class="btn-primary">
+<a href="https://forms.gle/hNkyhk3SKBpFB1aa8" class="btn">
 Quero testar na minha operação
 </a>
 </section>
 
 </div>
 
-<!-- BLOCO COMUNIDADE FINAL -->
-<div class="community-block">
+<!-- ===== BLOCO COMUNIDADE FINAL ===== -->
+<div class="community">
 <h3>🔬 Encerramento — Comunidade SaaS</h3>
 <p>
-Se você chegou até aqui, sua opinião é estratégica.
+Sua opinião é estratégica para decidir os próximos passos.
 <br><br>
-O que faria você testar?  
-O que gera dúvida?  
-O que você ajustaria?
-<br><br>
-<b>Marcos Russi Alcantara</b><br>
-LinkedIn: (inserir link)<br>
+Marcos Russi Alcantara<br>
+LinkedIn: (inserir)<br>
 WhatsApp: (inserir)<br>
 Email: (inserir)
 </p>
