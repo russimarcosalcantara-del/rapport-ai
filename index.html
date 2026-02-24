@@ -1,139 +1,342 @@
-body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    margin: 0;
-    color: #0f172a;
-    background: #ffffff;
-    line-height: 1.6;
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rapport AI</title>
+
+<style>
+body{
+    margin:0;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu,sans-serif;
+    background:#0F172A;
+    color:#111827;
 }
 
-.container {
-    max-width: 1100px;
-    margin: auto;
-    padding: 80px 20px;
+/* BLOCO COMUNIDADE */
+.community-block{
+    background:#0F172A;
+    color:#E5E7EB;
+    text-align:center;
+    padding:40px 20px;
 }
 
-.center {
-    text-align: center;
+.community-block h3{
+    margin:0 0 15px 0;
+    font-size:22px;
+    font-weight:600;
 }
 
-.community-frame {
-    background: #0f172a;
-    color: #ffffff;
+.community-block p{
+    max-width:800px;
+    margin:0 auto;
+    color:#CBD5E1;
+    font-size:15px;
+    line-height:1.6;
 }
 
-.community-badge {
-    display: inline-block;
-    background: #1E3A8A;
-    padding: 6px 14px;
-    border-radius: 20px;
-    font-size: 12px;
-    letter-spacing: 1px;
-    margin-bottom: 20px;
+/* CONTAINER PRINCIPAL (LP) */
+.lp-wrapper{
+    background:#ffffff;
+    max-width:1100px;
+    margin:60px auto;
+    border-radius:16px;
+    box-shadow:0 40px 80px rgba(0,0,0,0.25);
+    overflow:hidden;
 }
 
-.hero {
-    background: #ffffff;
+/* SECTIONS */
+section{
+    padding:80px 60px;
 }
 
-.section-light {
-    background: #f8fafc;
+.alt-bg{
+    background:#F8FAFC;
 }
 
-.section-white {
-    background: #ffffff;
+.light-blue{
+    background:#EFF6FF;
 }
 
-h1 {
-    font-size: 44px;
-    font-weight: 600;
+h1{
+    font-size:42px;
+    line-height:1.2;
+    margin-bottom:20px;
 }
 
-h2 {
-    font-size: 30px;
+h2{
+    font-size:30px;
+    margin-bottom:20px;
 }
 
-.hero-sub {
-    font-size: 20px;
-    color: #475569;
+h3{
+    margin-top:40px;
 }
 
-.highlight {
-    font-weight: 600;
-    margin: 20px 0;
+p{
+    font-size:18px;
+    color:#374151;
+    line-height:1.7;
 }
 
-.highlight-small {
-    font-weight: 600;
-    margin-top: 10px;
+ul{
+    font-size:17px;
+    color:#374151;
 }
 
-.hero-benefits {
-    margin: 20px 0;
-    font-weight: 500;
-    color: #1E3A8A;
+/* HERO */
+.hero{
+    background:#1E3A8A;
+    color:#fff;
 }
 
-.btn-primary {
-    display: inline-block;
-    background: #1E3A8A;
-    color: #fff;
-    padding: 14px 28px;
-    border-radius: 10px;
-    text-decoration: none;
-    margin-top: 20px;
+.hero p{
+    color:#E5E7EB;
 }
 
-.grid-2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 60px;
-    align-items: center;
+.btn-primary{
+    display:inline-block;
+    background:#ffffff;
+    color:#1E3A8A;
+    padding:16px 28px;
+    border-radius:10px;
+    text-decoration:none;
+    font-weight:600;
+    margin-top:20px;
 }
 
-.grid-4 {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-    margin: 40px 0;
+.btn-primary:hover{
+    opacity:0.9;
 }
 
-.card-step {
-    background: #ffffff;
-    border: 1px solid #e2e8f0;
-    padding: 30px;
-    border-radius: 12px;
+/* GRID */
+.grid-2{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+    align-items:center;
 }
 
-.number {
-    font-size: 24px;
-    font-weight: bold;
-    color: #1E3A8A;
-    margin-bottom: 10px;
+.grid-3{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
 }
 
-.image-product {
-    width: 100%;
-    border-radius: 12px;
-    box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+/* CARD */
+.card{
+    background:#ffffff;
+    border-radius:14px;
+    padding:30px;
+    box-shadow:0 20px 40px rgba(0,0,0,0.08);
 }
 
-.image-product-small {
-    width: 90%;
-    border-radius: 12px;
-    box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+.step-icon{
+    font-size:26px;
+    margin-bottom:10px;
 }
 
-.problem-list li,
-.benefit-list li {
-    margin-bottom: 12px;
+.image-frame{
+    width:100%;
+    border-radius:12px;
+    box-shadow:0 20px 40px rgba(0,0,0,0.15);
+    margin-top:20px;
 }
 
-.product-step {
-    margin-top: 60px;
+/* CTA FINAL */
+.cta{
+    background:#1E3A8A;
+    color:#fff;
+    text-align:center;
 }
 
-@media(max-width: 900px) {
-    .grid-2, .grid-4 {
-        grid-template-columns: 1fr;
+.cta p{
+    color:#E5E7EB;
+}
+
+.cta .btn-primary{
+    background:#fff;
+    color:#1E3A8A;
+}
+
+/* RESPONSIVO */
+@media(max-width:900px){
+    section{
+        padding:60px 30px;
+    }
+    .grid-2,.grid-3{
+        grid-template-columns:1fr;
     }
 }
+</style>
+</head>
+
+<body>
+
+<!-- BLOCO COMUNIDADE INICIAL -->
+<div class="community-block">
+<h3>🧠 Validação Estratégica — Comunidade SaaS</h3>
+<p>
+Esta é a V0 (hipótese de fakedoor) construída para nosso ICP ideal: 
+imobiliárias médias e grandes que desejam escalar vendas com governança comercial.
+<br><br>
+Abaixo começa a experiência pensada para esse ICP.
+Sua opinião impacta diretamente nossa decisão de avançar.
+</p>
+</div>
+
+<!-- WRAPPER LP -->
+<div class="lp-wrapper">
+
+<!-- HERO -->
+<section class="hero">
+<h1>O momento que decide a visita é onde a conversão começa.</h1>
+
+<p>
+Quando o lead já solicitou informações específicas dentro da sua imobiliária,
+ele não está mais buscando outras opções.
+Ele está decidindo se aquele imóvel — e aquele corretor —
+merecem o tempo dele.
+</p>
+
+<p><strong>Inteligência aplicada ao momento crítico da decisão.</strong></p>
+
+<a href="https://forms.gle/hNkyhk3SKBpFB1aa8" class="btn-primary">
+Quero testar na minha operação
+</a>
+</section>
+
+<!-- MOMENTO + REALIDADE -->
+<section class="alt-bg">
+<h2>O momento mais sensível da jornada</h2>
+
+<div class="grid-2">
+<div>
+<p>
+O lead já iniciou a UX com sua imobiliária.
+Isso é uma vantagem conquistada.
+</p>
+
+<p>
+Mas muitas vezes a resposta enviada é apenas um link,
+sem argumento, sem estrutura e sem diferenciação.
+</p>
+
+<ul>
+<li>Sem ancoragem estratégica</li>
+<li>Sem organização clara</li>
+<li>Sem contexto personalizado</li>
+</ul>
+</div>
+
+<div>
+<img src="assets/resposta-hoje.png" class="image-frame">
+</div>
+</div>
+</section>
+
+<!-- COMO FUNCIONA -->
+<section>
+<h2>Como o Rapport AI estrutura esse momento</h2>
+
+<div class="grid-3">
+
+<div class="card">
+<div class="step-icon">🧩</div>
+<h3>1. Contexto Estratégico</h3>
+<p>
+Critérios técnicos e contexto do lead são organizados antes da resposta.
+</p>
+</div>
+
+<div class="card">
+<div class="step-icon">🧠</div>
+<h3>2. Estruturação Inteligente</h3>
+<p>
+Imóveis são organizados por aderência real,
+com racional claro e argumento comercial.
+</p>
+</div>
+
+<div class="card">
+<div class="step-icon">🛡️</div>
+<h3>3. Governança Invisível</h3>
+<p>
+Verificação contextual entre campos estruturados
+e descrição do imóvel.
+Inconsistências são sinalizadas antes do envio.
+</p>
+</div>
+
+</div>
+
+<img src="assets/dossie.png" class="image-frame">
+</section>
+
+<!-- PILOTO -->
+<section class="light-blue">
+<h2>Piloto estruturado em 3 passos</h2>
+
+<div class="grid-3">
+
+<div class="card">
+<div class="step-icon">📅</div>
+<h3>Diagnóstico (45 min)</h3>
+<p>Alinhamento estratégico sobre sua operação.</p>
+</div>
+
+<div class="card">
+<div class="step-icon">⚙️</div>
+<h3>Configuração (2–3 dias)</h3>
+<p>Preparação do inventário piloto.</p>
+</div>
+
+<div class="card">
+<div class="step-icon">🚀</div>
+<h3>Liberação</h3>
+<p>Uso estruturado por 15 dias.</p>
+</div>
+
+</div>
+
+<p style="margin-top:30px;">
+Sem integração complexa.  
+Sem troca de CRM.  
+Sem risco operacional.
+</p>
+</section>
+
+<!-- CTA FINAL -->
+<section class="cta">
+<h2>Estruture o momento que define a visita.</h2>
+
+<p>
+Valide em sua operação com um piloto controlado.
+</p>
+
+<a href="https://forms.gle/hNkyhk3SKBpFB1aa8" class="btn-primary">
+Quero testar na minha operação
+</a>
+</section>
+
+</div>
+
+<!-- BLOCO COMUNIDADE FINAL -->
+<div class="community-block">
+<h3>🔬 Encerramento — Comunidade SaaS</h3>
+<p>
+Se você chegou até aqui, sua opinião é estratégica.
+<br><br>
+O que faria você testar?  
+O que gera dúvida?  
+O que você ajustaria?
+<br><br>
+<b>Marcos Russi Alcantara</b><br>
+LinkedIn: (inserir link)<br>
+WhatsApp: (inserir)<br>
+Email: (inserir)
+</p>
+</div>
+
+</body>
+</html>
